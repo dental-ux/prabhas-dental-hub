@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Calendar, User } from "lucide-react";
+import { Calendar, Phone, User } from "lucide-react";
 
 const servicesHighlights = [
   {
@@ -19,7 +19,7 @@ const servicesHighlights = [
     id: 3,
     title: "Quick Appointments",
     description: "Book your visit through WhatsApp for convenience.",
-    icon: <Calendar className="w-10 h-10 text-dental-blue" />
+    icon: <Phone className="w-10 h-10 text-dental-blue" />
   }
 ];
 

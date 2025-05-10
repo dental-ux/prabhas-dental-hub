@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Phone, Clock, MapPin, WhatsApp } from "lucide-react";
+import { Phone, Clock, MapPin } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -33,7 +33,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-dental-blue hover:bg-blue-600 shadow-md">
                 <a href="#schedule">
-                  <WhatsApp className="mr-2" size={18} />
+                  <Phone className="mr-2" size={18} />
                   Book Appointment
                 </a>
               </Button>

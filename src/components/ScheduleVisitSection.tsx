@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, WhatsApp, ArrowRight } from "lucide-react";
+import { Calendar, Phone, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 const ScheduleVisitSection = () => {
@@ -114,7 +114,7 @@ const ScheduleVisitSection = () => {
                     type="submit" 
                     className="w-full bg-dental-blue hover:bg-blue-600"
                   >
-                    <WhatsApp className="mr-2" size={16} />
+                    <Phone className="mr-2" size={16} />
                     Book via WhatsApp
                   </Button>
                 </form>
