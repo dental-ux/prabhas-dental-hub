@@ -1,13 +1,12 @@
-
 import { Button } from "@/components/ui/button";
-import { Calendar, Teeth, User } from "lucide-react";
+import { Calendar, User } from "lucide-react";
 
 const servicesHighlights = [
   {
     id: 1,
     title: "General Dentistry",
     description: "Comprehensive check-ups, cleanings, and preventative care.",
-    icon: <Teeth className="w-10 h-10 text-dental-blue" />
+    icon: <Calendar className="w-10 h-10 text-dental-blue" />
   },
   {
     id: 2,

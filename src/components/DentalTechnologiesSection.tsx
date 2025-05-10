@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Camera, FileImage, Teeth } from "lucide-react";
+import { Camera, FileImage, Calendar } from "lucide-react";
 
 const technologies = [
   {
@@ -19,7 +19,7 @@ const technologies = [
     id: 3,
     title: "3D Dental Scanners",
     description: "Create precise digital models of your teeth for accurate treatment planning without messy traditional impressions.",
-    icon: <Teeth className="text-dental-blue w-8 h-8" />
+    icon: <Calendar className="text-dental-blue w-8 h-8" /> // Changed from Teeth to Calendar
   }
 ];
 
