@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Menu, X, Phone, Instagram, Youtube, Clock, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,9 +34,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="/" className="text-dental-blue font-bold text-2xl">
+            <Link to="/" className="text-dental-blue font-bold text-2xl">
               Dr. Prabha's Dental Clinic
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -47,12 +48,12 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#home" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Home</a>
-            <a href="#about" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">About</a>
-            <a href="#services" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Services</a>
-            <a href="#doctor-tips" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Doctor Tips</a>
-            <a href="#training" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Training</a>
-            <a href="#contact" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Contact</a>
+            <Link to="/" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Home</Link>
+            <Link to="/about" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">About</Link>
+            <Link to="/services" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Services</Link>
+            <Link to="/doctor-tips" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Doctor Tips</Link>
+            <Link to="/training" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Training</Link>
+            <Link to="/contact" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Contact</Link>
             <Button asChild className="bg-dental-blue hover:bg-blue-600">
               <a href="https://wa.me/919597876632" target="_blank" rel="noopener noreferrer">
                 Book Appointment
@@ -67,20 +68,20 @@ const Navbar = () => {
         <div className={`fixed inset-0 bg-white z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="container mx-auto px-4 py-6">
             <div className="flex justify-between items-center mb-8">
-              <a href="/" className="text-dental-blue font-bold text-2xl">
+              <Link to="/" className="text-dental-blue font-bold text-2xl" onClick={toggleMenu}>
                 Dr. Prabha's Dental Clinic
-              </a>
+              </Link>
               <Button variant="ghost" onClick={toggleMenu} aria-label="Close Menu">
                 <X />
               </Button>
             </div>
             <nav className="flex flex-col space-y-6">
-              <a href="#home" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Home</a>
-              <a href="#about" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>About</a>
-              <a href="#services" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Services</a>
-              <a href="#doctor-tips" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Doctor Tips</a>
-              <a href="#training" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Training</a>
-              <a href="#contact" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Contact</a>
+              <Link to="/" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Home</Link>
+              <Link to="/about" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>About</Link>
+              <Link to="/services" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Services</Link>
+              <Link to="/doctor-tips" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Doctor Tips</Link>
+              <Link to="/training" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Training</Link>
+              <Link to="/contact" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Contact</Link>
               <Button asChild className="bg-dental-blue hover:bg-blue-600 w-full">
                 <a href="https://wa.me/919597876632" target="_blank" rel="noopener noreferrer">
                   Book Appointment

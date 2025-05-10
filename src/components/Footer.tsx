@@ -1,5 +1,6 @@
 
 import { Phone, Clock, MapPin, Instagram, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -36,24 +37,24 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Services</a></li>
-              <li><a href="#doctor-tips" className="text-gray-300 hover:text-white transition-colors">Doctor Tips</a></li>
-              <li><a href="#training" className="text-gray-300 hover:text-white transition-colors">Training</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+              <li><Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
+              <li><Link to="/doctor-tips" className="text-gray-300 hover:text-white transition-colors">Doctor Tips</Link></li>
+              <li><Link to="/training" className="text-gray-300 hover:text-white transition-colors">Training</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">General Dentistry</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Cosmetic Dentistry</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Orthodontics</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Pediatric Dentistry</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Dental Implants</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Root Canal Treatment</a></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">General Dentistry</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Cosmetic Dentistry</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Orthodontics</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Pediatric Dentistry</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Dental Implants</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Root Canal Treatment</Link></li>
             </ul>
           </div>
 
