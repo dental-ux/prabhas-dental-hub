@@ -1,0 +1,124 @@
+
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { Menu, X, Phone, Instagram, Youtube, Clock, MapPin } from "lucide-react";
+
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const isMobile = useIsMobile();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between items-center">
+          <div className="flex items-center">
+            <a href="/" className="text-dental-blue font-bold text-2xl">
+              Dr. Prabha's Dental Clinic
+            </a>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden">
+            <Button variant="ghost" onClick={toggleMenu} aria-label="Toggle Menu">
+              {isMenuOpen ? <X /> : <Menu />}
+            </Button>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            <a href="#home" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Home</a>
+            <a href="#about" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">About</a>
+            <a href="#services" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Services</a>
+            <a href="#doctor-tips" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Doctor Tips</a>
+            <a href="#training" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Training</a>
+            <a href="#contact" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Contact</a>
+            <Button asChild className="bg-dental-blue hover:bg-blue-600">
+              <a href="https://wa.me/919597876632" target="_blank" rel="noopener noreferrer">
+                Book Appointment
+              </a>
+            </Button>
+          </nav>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMobile && (
+        <div className={`fixed inset-0 bg-white z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+          <div className="container mx-auto px-4 py-6">
+            <div className="flex justify-between items-center mb-8">
+              <a href="/" className="text-dental-blue font-bold text-2xl">
+                Dr. Prabha's Dental Clinic
+              </a>
+              <Button variant="ghost" onClick={toggleMenu} aria-label="Close Menu">
+                <X />
+              </Button>
+            </div>
+            <nav className="flex flex-col space-y-6">
+              <a href="#home" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Home</a>
+              <a href="#about" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>About</a>
+              <a href="#services" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Services</a>
+              <a href="#doctor-tips" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Doctor Tips</a>
+              <a href="#training" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Training</a>
+              <a href="#contact" className="text-xl text-dental-dark-gray hover:text-dental-blue font-medium transition-colors" onClick={toggleMenu}>Contact</a>
+              <Button asChild className="bg-dental-blue hover:bg-blue-600 w-full">
+                <a href="https://wa.me/919597876632" target="_blank" rel="noopener noreferrer">
+                  Book Appointment
+                </a>
+              </Button>
+
+              <div className="pt-6 border-t border-gray-100">
+                <h3 className="font-semibold mb-4">Contact Information</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <MapPin size={18} className="text-dental-blue" />
+                    <span className="text-sm">1/70, Poonamallee High Rd, Sivabatham, Vanagaram, Chennai, Tamil Nadu 600095</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Phone size={18} className="text-dental-blue" />
+                    <a href="tel:+919597876632" className="text-sm">095978 76632</a>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock size={18} className="text-dental-blue" />
+                    <span className="text-sm">Mon–Fri, 5–9 pm</span>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 mt-4">
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <Instagram className="text-dental-blue hover:text-blue-600 transition-colors" />
+                  </a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <Youtube className="text-dental-blue hover:text-blue-600 transition-colors" />
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default Navbar;
