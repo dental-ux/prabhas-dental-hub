@@ -10,14 +10,14 @@ const AboutSection = () => {
             <div className="absolute -top-10 -left-10 w-32 h-32 bg-dental-blue/10 rounded-full"></div>
             <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-dental-blue/20 rounded-full"></div>
             <img 
-              src="https://images.unsplash.com/photo-1559599189-fe84dea4eb79?q=80&w=1169&auto=format&fit=crop"
+              src="https://lh3.googleusercontent.com/p/AF1QipPdP5OxqA_12vAHbCrLsJJmi9Bfbi1ncjonhOXc=s1360-w1360-h1020-rw"
               alt="Dr. Prabha"
               className="rounded-lg shadow-lg w-full h-auto object-cover relative z-10"
             />
           </div>
 
           <div>
-            <h2 className="text-3xl font-bold text-dental-dark-gray mb-6">
+            <h2 className="text-3xl font-bold text-dental-dark-gray mb-1">
               About Dr. Prabha's Dental Clinic
             </h2>
             <p className="text-gray-600 mb-4">

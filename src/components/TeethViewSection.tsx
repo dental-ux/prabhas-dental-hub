@@ -21,9 +21,9 @@ const TeethViewSection = () => {
   // Dental images collection
   const dentalImages = {
     healthy: [
-      "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?q=80&w=1170&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=1780&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1609840112990-4265448268d1?q=80&w=1740&auto=format&fit=crop"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrqJpfU_i24zvMUG21dhwCoEaHU5ZAkrswmg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrqJpfU_i24zvMUG21dhwCoEaHU5ZAkrswmg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkoVfQYfhqm0EwV6OlSIaD2GwZErdWrrhnA&s"
     ],
     rootcanal: [
       "https://images.unsplash.com/photo-1601301152579-aa13c66f45b3?q=80&w=1780&auto=format&fit=crop",

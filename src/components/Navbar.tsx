@@ -49,12 +49,14 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             <Link to="/" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Home</Link>
-            <Link to="/about" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">About</Link>
             <Link to="/services" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Services</Link>
             <Link to="/doctor-tips" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Doctor Tips</Link>
             <Link to="/training" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Training</Link>
+            <Link to="/about" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">About</Link>
+
             <Link to="/contact" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Contact</Link>
             <Button asChild className="bg-dental-blue hover:bg-blue-600">
+
               <a href="https://wa.me/919597876632" target="_blank" rel="noopener noreferrer">
                 Book Appointment
               </a>
@@ -106,7 +108,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex gap-4 mt-4">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <a href="https://www.instagram.com/drprabhasdentistry?utm_source=qr&igsh=NGhrZmF3enM0NGhz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <Instagram className="text-dental-blue hover:text-blue-600 transition-colors" />
                   </a>
                   <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">

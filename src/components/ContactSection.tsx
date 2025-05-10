@@ -65,7 +65,7 @@ const ContactSection = () => {
                   <h3 className="font-medium text-lg mb-3">Follow Us</h3>
                   <div className="flex gap-4">
                     <a 
-                      href="https://instagram.com" 
+                      href="https://www.instagram.com/drprabhasdentistry?utm_source=qr&igsh=NGhrZmF3enM0NGhz" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-dental-light-blue/30 hover:bg-dental-light-blue transition-colors p-3 rounded-full"
