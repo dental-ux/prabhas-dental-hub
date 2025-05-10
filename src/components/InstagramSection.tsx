@@ -6,20 +6,35 @@ const reels = [
     id: 1,
     title: "1-minute Tip: How to brush your molars right 🦷",
     thumbnail: "https://images.unsplash.com/photo-1541436293327-8f0261eadb5e?q=80&w=1169&auto=format&fit=crop",
-    url: "https://www.instagram.com/p/example1/"
+    url: "https://www.instagram.com/p/DIMHT4ATNSS/?img_index=3",
+    reelEmbedUrl: "https://www.instagram.com/p/DIMHT4ATNSS/embed/captioned/"  // Embed URL for the Instagram Reel
+
   },
   {
     id: 2,
     title: "This is what happens if you skip your dental visits! 😱",
     thumbnail: "https://images.unsplash.com/photo-1611316185995-32ac43ac1b94?q=80&w=1170&auto=format&fit=crop",
-    url: "https://www.instagram.com/p/example2/"
+    url: "https://www.instagram.com/p/DIlziuSzyZo",
+    reelEmbedUrl: "https://www.instagram.com/p/DIlziuSzyZo/embed/captioned/"  // Embed URL for the Instagram Reel
+
   },
   {
     id: 3,
     title: "Behind the scenes: Cleaning tools we use 🧼",
     thumbnail: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1170&auto=format&fit=crop",
-    url: "https://www.instagram.com/p/example3/"
+    url: "https://www.instagram.com/p/DJC06iQTPJl/",
+    reelEmbedUrl: "https://www.instagram.com/p/DJC06iQTPJl/embed/captioned/"  // Embed URL for the Instagram Reel
+
+  },
+    {
+    id: 4,
+    title: "A Perfect Smile Start with Great Dental Care",
+    thumbnail: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1170&auto=format&fit=crop",
+    url: "https://www.instagram.com/p/DHTYCwVT-KW/",
+    reelEmbedUrl: "https://www.instagram.com/p/DHTYCwVT-KW/embed/captioned/"  // Embed URL for the Instagram Reel
+
   }
+
 ];
 
 const InstagramSection = () => {
@@ -35,18 +50,21 @@ const InstagramSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {reels.map((reel) => (
-            <Card key={reel.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+            <Card key={reel.id} className="overflow-hidden ">
               <a href={reel.url} target="_blank" rel="noopener noreferrer" className="block">
                 <div className="relative h-96 overflow-hidden">
-                  <img
-                    src={reel.thumbnail}
-                    alt={reel.title}
-                    className="w-full h-full object-cover"
+                  <iframe
+                    src={reel.reelEmbedUrl}
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 flex flex-col justify-end p-4">
-                    <p className="text-white font-medium">{reel.title}</p>
                     <div className="flex items-center mt-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>

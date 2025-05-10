@@ -4,15 +4,23 @@ import { Phone, Clock, MapPin } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="pt-24 pb-16 lg:min-h-screen bg-gradient-to-b from-dental-light-blue/30 to-white flex items-center">
+    <section id="home" className="pt-24 pb-16 lg:min-h-screen bg-gradient-to-b from-dental-light-blue/30 to-white flex items-center"
+          style={{
+        backgroundImage: 'url("https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=2069&auto=format&fit=crop")',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+
+    
+    >
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
-            <h1 className="text-4xl lg:text-5xl font-bold text-dental-dark-gray mb-6">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Welcome to Dr. Prabha's Dental Your Perfect
 Smile Starts Here
             </h1>
-            <p className="text-lg text-gray-600 mb-8 max-w-lg">
+            <p className="text-lg text-white-600 mb-8 max-w-lg">
               We provide comprehensive dental care with a gentle touch. Your smile is our priority - let us help you maintain a healthy, beautiful smile.
             </p>
             
@@ -44,7 +52,7 @@ Smile Starts Here
             </div>
           </div>
 
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <div className="relative">
               <div className="absolute -top-10 -left-10 w-32 h-32 bg-dental-blue/10 rounded-full"></div>
               <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-dental-blue/20 rounded-full"></div>
@@ -57,7 +65,7 @@ Smile Starts Here
                 Gentle Care
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

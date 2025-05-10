@@ -25,8 +25,7 @@ const servicesHighlights = [
 
 const ServicesHighlightsSection = () => {
   return (
-    <section id="services" className="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7UBcagJDF0LlkkuX93RB9nEBejPm4Gxydw&s')]
-">
+    <section id="services" className="">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-dental-dark-gray mb-2">

@@ -49,11 +49,10 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             <Link to="/" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Home</Link>
-            <Link to="/services" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Services</Link>
             <Link to="/doctor-tips" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Doctor Tips</Link>
+            <Link to="/services" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Services</Link>
             <Link to="/training" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Training</Link>
             <Link to="/about" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">About</Link>
-
             <Link to="/contact" className="text-dental-dark-gray hover:text-dental-blue font-medium transition-colors">Contact</Link>
             <Button asChild className="bg-dental-blue hover:bg-blue-600">
 

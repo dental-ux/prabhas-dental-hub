@@ -6,25 +6,25 @@ const hygieneSteps = [
     id: 1,
     title: "Brushing Technique",
     description: "Use a soft-bristled brush at a 45-degree angle to your gums. Gently brush using short back-and-forth strokes. Brush all surfaces: outer, inner, and chewing.",
-    image: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?q=80&w=1173&auto=format&fit=crop"
+    image: "https://media.gettyimages.com/id/1627346054/photo/close-up-mouth-of-teenage-boy-holding-electric-toothbrush-in-hand-smiling-and-brushing-teeth.jpg?s=612x612&w=0&k=20&c=0TwO73AkaB-QlG_8ceMO_68vyORM_djE_9qLJ5CRtz8="
   },
   {
     id: 2,
     title: "Flossing Daily",
     description: "Curve the floss around each tooth in a 'C' shape, and gently slide it under the gumline. Use a clean section of floss for each tooth to avoid spreading bacteria.",
-    image: "https://images.unsplash.com/photo-1588528402605-1f9d0eb3a3cd?q=80&w=1170&auto=format&fit=crop"
+    image: "https://media.istockphoto.com/id/858591060/photo/side-view-woman-face-smiling-with-dental-floss.jpg?s=612x612&w=0&k=20&c=HAV8lYsmvLQ-qrF18JOD2ruytYjZnu3OxuyJvu2O018="
   },
   {
     id: 3,
     title: "Mouthwash Use",
     description: "Use an antimicrobial mouthwash to reduce plaque, prevent gingivitis, and freshen breath. Swish for 30-60 seconds after brushing and flossing.",
-    image: "https://images.unsplash.com/photo-1621720553586-06235a2ae04f?q=80&w=1170&auto=format&fit=crop"
+    image: "https://img.freepik.com/premium-photo/woman-pouring-mouthwash-into-cap_1016675-3700.jpg"
   },
   {
     id: 4,
     title: "Tongue Cleaning",
     description: "Clean your tongue daily with a tongue scraper or your toothbrush to remove bacteria that cause bad breath and affect taste sensation.",
-    image: "https://images.unsplash.com/photo-1622467827417-bbe6542801eb?q=80&w=1287&auto=format&fit=crop"
+    image: "https://mouthology.com/cdn/shop/articles/Tongue_Scraper_Everything_You_Need_to_Know.jpg?v=1713942365&width=1366"
   }
 ];
 

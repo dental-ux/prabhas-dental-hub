@@ -33,7 +33,7 @@ const TeethViewSection = () => {
   };
 
   return (
-    <section id="teeth-view" className="py-16 bg-dental-light-blue/20">
+    <section id="teeth-view" className="py-16 bg-#f0f5fe">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-dental-dark-gray mb-2">360° Dental Visualization</h2>
@@ -60,10 +60,10 @@ const TeethViewSection = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="overflow-hidden">
+          <Card className="overflow-hidden" >
             <CardContent className="p-6">
               <div className="bg-white p-4 rounded-lg">
-                <div className="aspect-video bg-dental-light-gray rounded-lg flex items-center justify-center relative">
+                <div className="aspect-video bg-dental-light-gray rounded-lg flex items-center justify-center relative"  >
                   <div 
                     style={{ 
                       transform: `rotateY(${rotation}deg)`,

@@ -1,30 +1,32 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
+
 
 const doctorTips = [
   {
     id: 1,
     title: "Why Flossing is as Important as Brushing",
     description: "Dr. Prabha explains how daily flossing prevents gum disease and tooth decay.",
-    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1170&auto=format&fit=crop"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKz9wpYfUyavigCRdSXyS-CwQLjmWjGQTH8Q&s"
   },
   {
     id: 2,
     title: "Top 5 Foods That Stain Your Teeth",
     description: "Learn which foods to avoid for a whiter smile.",
-    image: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=1160&auto=format&fit=crop"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyef76wUc1ywuU0aYfdaMoBZHWq3EI5rgu_NPpczQsuydG3X3veZYjibW8RmB3TaBvT7Y&usqp=CAU"
   },
   {
     id: 3,
     title: "Is Your Toothbrush Too Old?",
     description: "Replace it every 3 months or after an illness.",
-    image: "https://images.unsplash.com/photo-1550159930-40066082a4fc?q=80&w=1160&auto=format&fit=crop"
+    image: "https://static.vecteezy.com/system/resources/previews/017/324/224/non_2x/a-bunch-of-old-worn-out-toothbrushes-with-bent-bristles-on-a-white-background-photo.jpg"
   },
   {
     id: 4,
     title: "How to Help Kids Develop Good Oral Habits",
     description: "Make brushing fun and consistent.",
-    image: "https://images.unsplash.com/photo-1588776814546-daab30f310ce?q=80&w=1160&auto=format&fit=crop"
+    image: "https://cdn.shopify.com/s/files/1/0661/2113/8345/files/WEB-BANNERS19.jpg?v=1728290727"
   }
 ];
 
@@ -54,14 +56,19 @@ const DoctorTipsSection = () => {
               </CardHeader>
               <CardContent>
                 <CardDescription>{tip.description}</CardDescription>
+                <Link href={`/doctor-tips/${tip.slug}`} passHref>
+
+                  <p className="text-dental-blue mt-2 hover:underline">View More</p>
+                </Link>
+
               </CardContent>
             </Card>
           ))}
         </div>
 
         <div className="text-center mt-10">
-          <a 
-            href="#" 
+          <a
+            href="#"
             className="text-dental-blue hover:text-blue-700 font-medium inline-flex items-center"
           >
             View all doctor tips
