@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Calendar, User } from "lucide-react";
 
@@ -24,7 +25,7 @@ const servicesHighlights = [
 
 const ServicesHighlightsSection = () => {
   return (
-    <section className="py-16 bg-white">
+    <section id="services" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-dental-dark-gray mb-2">
@@ -37,18 +38,21 @@ const ServicesHighlightsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
           {servicesHighlights.map((service) => (
-            <div key={service.id} className="bg-dental-light-blue/10 p-8 rounded-lg text-center hover:shadow-md transition-shadow">
-              <div className="flex justify-center mb-4">
+            <div 
+              key={service.id} 
+              className="bg-dental-light-blue/10 p-8 rounded-lg text-center hover:shadow-md transition-all group hover:bg-dental-blue hover:text-white"
+            >
+              <div className="flex justify-center mb-4 bg-white rounded-full w-16 h-16 mx-auto items-center group-hover:bg-dental-light-blue">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="group-hover:text-white/90">{service.description}</p>
             </div>
           ))}
         </div>
         
         <div className="text-center">
-          <Button asChild size="lg" className="bg-dental-blue hover:bg-blue-600">
+          <Button asChild size="lg" className="bg-dental-blue hover:bg-blue-600 shadow-md">
             <a href="/services">View All Services</a>
           </Button>
         </div>

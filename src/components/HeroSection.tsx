@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Phone, Clock, MapPin } from "lucide-react";
+import { Phone, Clock, MapPin, WhatsApp } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -31,12 +31,13 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-dental-blue hover:bg-blue-600">
-                <a href="https://wa.me/919597876632" target="_blank" rel="noopener noreferrer">
-                  Book via WhatsApp
+              <Button asChild size="lg" className="bg-dental-blue hover:bg-blue-600 shadow-md">
+                <a href="#schedule">
+                  <WhatsApp className="mr-2" size={18} />
+                  Book Appointment
                 </a>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="border-dental-blue text-dental-blue hover:bg-dental-light-blue/30">
                 <a href="#services">Our Services</a>
               </Button>
             </div>
@@ -47,10 +48,13 @@ const HeroSection = () => {
               <div className="absolute -top-10 -left-10 w-32 h-32 bg-dental-blue/10 rounded-full"></div>
               <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-dental-blue/20 rounded-full"></div>
               <img 
-                src="https://images.unsplash.com/photo-1629909615184-74f495363b67?q=80&w=2069&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=2069&auto=format&fit=crop" 
                 alt="Dental care" 
-                className="rounded-lg shadow-lg w-full h-auto object-cover relative z-10"
+                className="rounded-lg shadow-lg w-full h-[450px] object-cover relative z-10"
               />
+              <div className="absolute top-4 right-4 bg-dental-blue text-white py-2 px-4 rounded-full text-sm font-medium z-20 shadow-md">
+                Gentle Care
+              </div>
             </div>
           </div>
         </div>
