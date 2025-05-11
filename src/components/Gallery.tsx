@@ -105,7 +105,7 @@ const Gallery = () => {
               <div className="h-full overflow-hidden relative"> {/* Match parent height */}
                 <img
                   src={tips[activeIndex].image}
-                  alt={tips[activeIndex].title}
+                  alt={''}
                   className="w-full h-full object-fit transition-transform duration-500 hover:scale-105"
                 />
 
