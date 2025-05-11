@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="text-dental-blue font-bold text-2xl">
-              Dr. Prabha's Dental Clinic
+              Drprabhasdentistry Clinic
             </Link>
           </div>
 
@@ -70,7 +70,7 @@ const Navbar = () => {
           <div className="container mx-auto px-4 py-6">
             <div className="flex justify-between items-center mb-8">
               <Link to="/" className="text-dental-blue font-bold text-2xl" onClick={toggleMenu}>
-                Dr. Prabha's Dental Clinic
+                Drprabhasdentistry  Clinic
               </Link>
               <Button variant="ghost" onClick={toggleMenu} aria-label="Close Menu">
                 <X />

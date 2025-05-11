@@ -18,7 +18,7 @@ const AboutSection = () => {
 
           <div>
             <h2 className="text-3xl font-bold text-dental-dark-gray mb-1">
-              About Dr. Prabha's Dental Clinic
+              About Drprabhasdentistry
             </h2>
             <p className="text-gray-600 mb-4">
               Welcome to Dr. Prabha's Dental Clinic, where we've been providing exceptional dental care to the Chennai community for over 15 years. Our modern facility is equipped with state-of-the-art technology to ensure you receive the best possible treatment.
